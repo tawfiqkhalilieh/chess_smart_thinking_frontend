@@ -73,15 +73,7 @@ export default function TimelineDemo() {
         <div>
           <p className="mb-8 text-xs font-normal text-neutral-800 md:text-sm dark:text-neutral-200 mt-15">
             <span className="text-gray-200 text-2xl font-serif ">
-              Data Labeling, It is true that the chess.com API provides a lot of
-              data, but it is not labeled, so I had to label it myself, and then
-              I used the labeled data to train the models. e.g, adding
-              evaluations to each position, link each move with the time stamps,
-              calculate the time delta of each time stamp to get the thinking
-              time for each move, adding some chess infornation nessaary for
-              training the model such as the amount of legal moves, is-check, or
-              even can the player castle. and of course having fun in the
-              beautify city I'm visiting, Seoul.
+              Data Labeling, While the chess.com API provides a large amount of data, it isn’t labeled. I had to label it myself and then use that labeled data to train the models. For example, I added engine evaluations to each position, linked every move to its timestamps, calculated the time deltas to measure thinking time per move, and included additional chess information necessary for training—such as the number of legal moves, whether the position is check, and whether castling is possible. And, of course, I made sure to enjoy my time in the beautiful city I’m visiting—Seoul!
             </span>
           </p>
           <div className="grid grid-cols-2 gap-4">
