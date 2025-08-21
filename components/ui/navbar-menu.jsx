@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
 import { motion } from "motion/react";
+import Image from "next/image";
 
 const transition = {
   type: "spring",
@@ -11,14 +12,20 @@ const transition = {
   restSpeed: 0.001,
 };
 
-export const MenuItem = ({ setActive, active, item, children }) => {
+export const MenuItem = ({
+  setActive,
+  active,
+  item,
+  children,
+  item_href = "",
+}) => {
   return (
     <div onMouseEnter={() => setActive(item)} className="relative ">
       <motion.p
         transition={{ duration: 0.3 }}
         className="cursor-pointer text-white/90 hover:text-white"
       >
-        {item}
+        {item_href ? <a href={item_href}>{item}</a> : <>{item}</>}
       </motion.p>
       {active !== null && (
         <motion.div
@@ -65,7 +72,7 @@ export const Menu = ({ setActive, children }) => {
 export const ProductItem = ({ title, description, href, src }) => {
   return (
     <a href={href} className="flex space-x-2">
-      <img
+      <Image
         src={src}
         width={140}
         height={70}

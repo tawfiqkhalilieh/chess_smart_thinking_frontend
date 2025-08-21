@@ -1,4 +1,4 @@
-import "../styles/globals.css";
+import "@/styles/globals.css";
 import Silk from "../components/Silk";
 import SplashCursor from "../components/SplashCursor";
 

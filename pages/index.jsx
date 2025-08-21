@@ -1,4 +1,4 @@
-import Home from "./home/inex";
+import Home from "./home";
 
 const LandingPage = () => <Home />;
 
